@@ -1,6 +1,6 @@
 from pathlib import Path
 import os
-import django-on-heroku
+import django_heroku
 import dj_database_url
 from decouple import config
 
@@ -134,6 +134,6 @@ EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_USE_TLS = False
 
-django-on-heroku.settings(locals())
+django_heroku.settings(locals())
 
 
